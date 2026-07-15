@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <style>text{font-family:Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#1f2937}.title{font-size:28px;font-weight:700}.label{font-size:20px;font-weight:600}.small{font-size:16px;fill:#64748b}</style>
+  <rect width="900" height="520" fill="#fff"/>
+  <text x="450" y="55" text-anchor="middle" class="title">단일 DB 서버</text>
+  <rect x="300" y="105" width="300" height="135" rx="18" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="345" cy="150" r="18" fill="#2563eb"/><path d="M337 150h16M345 142v16" stroke="white" stroke-width="3"/>
+  <text x="450" y="163" text-anchor="middle" class="label">DB 서버</text><text x="450" y="198" text-anchor="middle" class="small">요청 처리</text>
+  <path d="M450 240V315" stroke="#475569" stroke-width="3"/><path d="M442 303l8 13 8-13" fill="#475569"/>
+  <ellipse cx="450" cy="350" rx="130" ry="34" fill="#e0e7ff" stroke="#4f46e5" stroke-width="3"/><path d="M320 350v76c0 19 58 34 130 34s130-15 130-34v-76" fill="#e0e7ff" stroke="#4f46e5" stroke-width="3"/><path d="M320 390c0 19 58 34 130 34s130-15 130-34" fill="none" stroke="#4f46e5" stroke-width="3"/>
+  <text x="450" y="413" text-anchor="middle" class="label">DB 스토리지</text>
+</svg>
