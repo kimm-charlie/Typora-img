@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">사용자 ID를 기준으로 데이터를 두 Shard에 나누어 저장하는 예시</title>
+  <desc id="desc">애플리케이션이 사용자 ID를 Sharding Key로 사용해 Shard 1 또는 Shard 2로 요청을 보낸다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+  </defs>
+  <rect width="1200" height="560" fill="#f8fafc"/>
+  <text x="600" y="58" text-anchor="middle" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="28" font-weight="700" fill="#0f172a">Sharding: 사용자 ID를 기준으로 데이터 나누기</text>
+  <rect x="65" y="198" width="270" height="150" rx="18" fill="#e0f2fe" stroke="#38bdf8" stroke-width="3"/>
+  <text x="200" y="246" text-anchor="middle" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="25" font-weight="700" fill="#0c4a6e">Application</text>
+  <text x="200" y="285" text-anchor="middle" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="19" fill="#164e63">Sharding Key: userId</text>
+  <text x="200" y="316" text-anchor="middle" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="17" fill="#164e63">어느 DB에 저장할지 결정</text>
+  <line x1="335" y1="273" x2="515" y2="178" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="335" y1="273" x2="515" y2="368" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="413" y="193" text-anchor="middle" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="17" fill="#475569">userId 1~1,000,000</text>
+  <text x="420" y="382" text-anchor="middle" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="17" fill="#475569">userId 1,000,001~2,000,000</text>
+  <rect x="535" y="105" width="590" height="180" rx="18" fill="#ecfdf5" stroke="#34d399" stroke-width="3"/>
+  <rect x="535" y="375" width="590" height="180" rx="18" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/>
+  <text x="585" y="160" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="25" font-weight="700" fill="#065f46">Shard 1</text>
+  <text x="585" y="205" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="19" fill="#065f46">userId 1~1,000,000의 사용자 데이터</text>
+  <rect x="585" y="224" width="480" height="28" rx="8" fill="#a7f3d0"/>
+  <text x="605" y="246" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16" fill="#065f46">Users: 1, 2, 3, ... 1,000,000</text>
+  <text x="585" y="430" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="25" font-weight="700" fill="#9a3412">Shard 2</text>
+  <text x="585" y="475" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="19" fill="#9a3412">userId 1,000,001~2,000,000의 사용자 데이터</text>
+  <rect x="585" y="494" width="480" height="28" rx="8" fill="#fed7aa"/>
+  <text x="605" y="516" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16" fill="#9a3412">Users: 1,000,001, ... 2,000,000</text>
+</svg>
